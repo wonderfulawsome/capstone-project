@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Optimization Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Portfolio Optimization Tool</h1>
+        
+        <!-- 특성 선택 -->
+        <form id="features-form">
+            <h2>Select Your Preferences:</h2>
+
+            <!-- 각 특성에 대한 선택 -->
+            <label for="PER">Price to Earnings Ratio (PER):</label>
+            <select id="PER">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+
+            <label for="DividendYield">Dividend Yield:</label>
+            <select id="DividendYield">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+
+            <label for="Beta">Beta:</label>
+            <select id="Beta">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+
+            <label for="RSI">Relative Strength Index (RSI):</label>
+            <select id="RSI">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+
+            <label for="Volume">Volume:</label>
+            <select id="Volume">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+
+            <label for="Volatility">Volatility:</label>
+            <select id="Volatility">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+
+            <!-- 최적화 버튼 -->
+            <button type="button" id="optimize-button">Optimize Portfolio</button>
+        </form>
+        
+        <!-- 결과 표시 -->
+        <div id="result-display">Results will be displayed here</div>
+    </div>
+    
+    <!-- JavaScript 연결 -->
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
